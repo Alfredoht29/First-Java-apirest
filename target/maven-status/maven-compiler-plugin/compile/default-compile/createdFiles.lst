@@ -1,0 +1,11 @@
+com\mycompany\servicios\ProductoServicio$1.class
+com\mycompany\modelo\Galeria.class
+com\mycompany\servicios\ProductoServicio$3.class
+com\mycompany\servicios\Main.class
+com\mycompany\servicios\ProductoServicio.class
+com\mycompany\servicios\ProductoServicio$2.class
+com\mycompany\servicios\Configuracion.class
+com\mycompany\modelo\Producto.class
+com\mycompany\dao\GaleriaDao.class
+com\mycompany\dao\ProductoDao.class
+com\mycompany\servicios\DBconnection.class
