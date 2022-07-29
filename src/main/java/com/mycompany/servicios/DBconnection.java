@@ -17,9 +17,8 @@ public class DBconnection {
     public void conectar() {
         try {
             conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/galeria", "root", "S1stemas21");
-            System.out.println("Esta dentro");
         } catch (SQLException sql) {
-            System.out.println("No entro");
+            System.out.println(sql);
         }
     }
 
