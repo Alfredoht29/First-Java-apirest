@@ -39,18 +39,3 @@ public class GaleriaDao {
         return galerial;
     }
 }
-/*
-    public void getTest() throws SQLException{
-        Statement statement = conexion.createStatement();
-        ResultSet set = statement.executeQuery("select * from galeria.imagecrud");
-        while(set.next()){
-            int id = set.getInt("ID");
-            String titulo=set.getString("TITLE");
-            String descripcion=set.getString("DESCRIPTION");
-            String direccion=set.getString("URL");
-            String imagen=set.getString("IMAGE");
-             System.out.println(id+" "+titulo+" "+" "+descripcion+" "+direccion+" "+imagen);       
-        }
-        set.close();
-        statement.close();
-    } */
