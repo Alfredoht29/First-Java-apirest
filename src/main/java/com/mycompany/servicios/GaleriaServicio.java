@@ -18,11 +18,12 @@ import javax.ws.rs.core.MediaType;
 public class GaleriaServicio {
 
     private PostDao postDao;
+    public static  Galeria galeriasearch;
     
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response doGetResp() {
-        return Response.ok("galeria").build();
+        return Response.ok(galeriasearch).build();
     }
 
     @POST
@@ -34,6 +35,15 @@ public class GaleriaServicio {
         titulo=galeria.getTitulo();
         postDao.postGaleria(galeria);
         return Response.ok(titulo).build();
+
+    }
+    @POST
+    @Path("/search")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response searchGaleria(Galeria galeria) {
+        galeriasearch=galeria;
+        return Response.ok(galeriasearch).build();
 
     }
 
