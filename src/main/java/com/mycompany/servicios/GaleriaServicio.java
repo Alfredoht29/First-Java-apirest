@@ -20,13 +20,12 @@ import javax.ws.rs.core.MediaType;
 public class GaleriaServicio {
 
     private PostDao postDao;
-    public static Galeria galeriasearch;
     private static List<Galeria> galerial = GaleriaDao.getGaleria();
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response doGetResp() {
-        return Response.ok(galeriasearch).build();
+        return Response.ok("galeria").build();
     }
 
     @POST
