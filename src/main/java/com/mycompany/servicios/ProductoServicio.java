@@ -23,7 +23,7 @@ import javax.ws.rs.core.Response;
 public class ProductoServicio {
 
     private static List<Producto> lista = ProductoDao.getProductos();
-    private static List<Galeria> galerial = GaleriaDao.getGaleria();
+    private List<Galeria> galerial = GaleriaDao.getGaleria();
     
     
     private final ExecutorService executorService = java.util.concurrent.Executors.newCachedThreadPool();
